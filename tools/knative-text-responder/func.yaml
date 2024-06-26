@@ -1,8 +1,7 @@
 specVersion: 0.36.0
 name: knative-text-responder
 runtime: go
-registry: quay.io/cali0707
-image: quay.io/cali0707/knative-text-responder:latest
+registry: docker.io/matzew
 namespace: default
 created: 2024-04-09T10:41:14.850534546-04:00
 invoke: cloudevent
@@ -10,4 +9,4 @@ build:
   builder: pack
 deploy:
   namespace: default
-  image: quay.io/cali0707/knative-text-responder@sha256:fe896781652714e2bf9425b3c4868565866f4f378a26b8f5d8785a045606864b
+  image: index.docker.io/matzew/knative-text-responder@sha256:96c7b06bb8da48a6f97dab9f10ac5c0bb1158d05e2e0bdfe8eb419019bb75463

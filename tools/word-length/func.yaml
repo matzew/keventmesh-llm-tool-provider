@@ -1,8 +1,7 @@
 specVersion: 0.36.0
 name: word-length
 runtime: go
-registry: quay.io/cali0707/word-length
-image: quay.io/cali0707/word-length/word-length:latest
+registry: docker.io/matzew
 namespace: default
 created: 2024-04-10T13:58:47.000036865-04:00
 invoke: cloudevent
@@ -10,4 +9,4 @@ build:
   builder: pack
 deploy:
   namespace: default
-  image: quay.io/cali0707/word-length/word-length@sha256:9e025b884c38eba90ab468f6aa59eebc26da737de0bc743db3b4e8d4d68d85af
+  image: index.docker.io/matzew/word-length@sha256:f584a4b596095ad8838a75c40ecd2976d233ea44d6f7083d8856384ee8c3ee04
